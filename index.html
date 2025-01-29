@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 <body>
+<main>
+    <div class="container">
+        <form id="form" class="form">
+            <div class="form-container">
+                <div class="form-group">
+                    <label class="form-label" for="day">Day</label>
+                    <input class="form-input"  type="number" id="day" placeholder="DD" min="1">
+                    <span class="error-message day-error"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="month">Month</label>
+                    <input class="form-input"  type="number" id="month" placeholder="MM" min="1">
+                    <span class="error-message month-error"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="year">Year</label>
+                    <input class="form-input" type="number" id="year" min="1900"
+                           placeholder="YYYY">
+                    <span class="error-message year-error"></span>
+                </div>
+            </div>
+            <div class="divider">
+                <div class="line"></div>
+                <button id="btnSubmit" type="submit" class="btn-submit">
+                    <img src="./assets/images/icon-arrow.svg" alt="Arrow Icon">
+                </button>
+            </div>
+        </form>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="result__display">
+            <p class="result"><span class="years">--</span> years</p>
+            <p class="result"><span class="months">--</span> months</p>
+            <p class="result"><span class="days">--</span> days</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/luissitoe">Luís Sitoe</a>.
+    </div>
+</footer>
+<script src="./assets/script.js">    </script>
 </body>
 </html>
