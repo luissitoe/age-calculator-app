@@ -34,5 +34,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/luissitoe/age-calculator-app)
-- Live Site URL: [Add live site URL here](https://luissitoe.github.io/age-calculator-app/)
+- Solution URL: [Check](https://github.com/luissitoe/age-calculator-app)
+- Live Site URL: [Age Calculator](https://luissitoe.github.io/age-calculator-app/)
