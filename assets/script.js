@@ -67,7 +67,7 @@ form.addEventListener('submit', (e) => {
             months += 12;
         }
 
-       const display =  document.querySelector(".result__display");
+       const display =  document.querySelector(".result-display");
        display.querySelector(".years").innerText = years;
        display.querySelector(".months").innerText = months;
        display.querySelector(".days").innerText = days;
